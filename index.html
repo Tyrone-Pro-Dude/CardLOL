@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lost &amp; Found Studio - design your funny card</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Serif+Display&family=Permanent+Marker&family=Shrikhand&family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head><body>
+<header><h1>Lost &amp; Found Studio</h1><p>Pick a template, add your funny text, download a print-ready card.</p></header>
+<main>
+<div id="left">
+  <div class="row" style="margin:0 0 10px"><button id="sf" class="on">Front</button><button id="sb">Back</button></div>
+  <div id="stage"></div>
+  <div class="row"><button class="pri" id="png">Download PNG</button><button class="pri" id="pdf">Download PDF</button><button id="rnd">Surprise me</button></div>
+  <label class="ck"><input type="checkbox" data-k="bleed">Print-ready: add 3 mm bleed + safe margin</label>
+  <div id="msg"></div>
+  <div id="cap">Card size: 85.6 x 54 mm (standard bank-card size). Exports are 300 DPI: front and back.</div>
+</div>
+<div id="panel"></div>
+</main>
+<script src="render.js"></script>
+<script src="app.js"></script>
+</body></html>
